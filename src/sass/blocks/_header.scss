@@ -20,26 +20,31 @@
 
         // .header-bodey__content
         &__content {
+            // position: relative;
             padding-top: 239px;
         }
 
         // .header-bodey__title
         &__title {
             text-align: center;
+            margin-bottom: 10px;
         }
 
         // .header-bodey__subtitle
         &__subtitle {
-            margin-top: 10px;
+
             text-align: center;
+            margin-bottom: 50px;
+        }
+
+        &__btn {
+
+            color: $main_text_color;
+
         }
 
         // .header-bodey__btn
-        &__btn {
-            // margin-top: 50px;
-            margin: 50px auto 0;
 
-        }
 
 
     }

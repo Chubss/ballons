@@ -7,15 +7,19 @@
         letter-spacing: 10px;
         color: #FFFFFF;
     }
+
+    animation: headerAnimation 2s 1 ease-in-out;
 }
 
 .subtitle {
     &_white {
-        font-weight: 300;
+        font-weight: 100;
         font-size: 40px;
         line-height: 48px;
         letter-spacing: 5px;
         color: #FFFFFF;
 
     }
+
+    animation: subheaderAnimation 2s 1 ease-in-out;
 }
