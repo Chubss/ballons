@@ -1,36 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700,900&display=swap');
-@import "base/mixins";
-@import "base/variables";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 @import "base/animation";
 
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 10px;
-}
-
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: $main_text_color;
-    letter-spacing: 2px;
-    background-color: #fff;
-}
-
-[class*="__container"] {
-    // width: 1440px;
-    padding: 50px;
-    background-color: $bacground_color;
-    margin: 0 auto;
-}
-
-@import "blocks/header";
-@import "blocks/buttons";
-@import "blocks/titles";
+@import "base/base";
+@import "base/typography";
+@import "layout/header";
+@import "components/buttons";
