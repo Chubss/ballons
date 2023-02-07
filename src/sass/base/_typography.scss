@@ -1,8 +1,16 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $main_text_color;
+}
+
+
 .title {
 
     &_white {
         font-weight: 800;
-        font-size: 50px;
+        font-size: 5rem;
         line-height: 60px;
         letter-spacing: 10px;
         color: #FFFFFF;
