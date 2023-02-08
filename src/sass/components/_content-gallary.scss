@@ -1,0 +1,45 @@
+.content-gallary {
+    position: relative;
+
+    &__photo {
+        width: 60%;
+        box-shadow: $box-shadow;
+        border-radius: .5rem;
+        position: absolute;
+        transition: all .2s;
+        outline-offset: .2rem;
+
+
+        &_1 {
+            top: 0;
+            left: 0;
+        }
+
+        &_2 {
+            left: 22.1rem;
+            top: 8.1rem;
+        }
+
+        &_3 {
+            left: 2.2rem;
+            top: 16.4rem;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            z-index: 10;
+            outline: .5rem solid $brown-color-light;
+
+        }
+
+
+    }
+
+    // &:hover &__photo:not(:hover) {
+    //     transform: scale(.45);
+    // }
+    &:hover &__photo:not(:hover) {
+        transform: scale(.95);
+    }
+
+}

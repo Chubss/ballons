@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,regular,500,700,900&display=swap');
+@import "libs/icon_font";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 @import "base/animation";
+@import "base/utilites";
 
 
 @import "base/base";
@@ -9,3 +11,5 @@
 @import "layout/header";
 @import "layout/grid";
 @import "components/buttons";
+@import "layout/about";
+@import "components/content-gallary";
