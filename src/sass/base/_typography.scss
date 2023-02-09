@@ -14,9 +14,10 @@ body {
         line-height: 60px;
         letter-spacing: 10px;
         color: #FFFFFF;
+        animation: headerAnimation 2s 1 ease-in-out;
     }
 
-    animation: headerAnimation 2s 1 ease-in-out;
+
 
     &_gradient {
         text-transform: uppercase;
@@ -39,32 +40,15 @@ body {
 
     }
 
-    &_descr {
-        animation: unset;
+    &__paragraph {
         font-weight: 700;
         font-size: 2rem;
         line-height: 2.4rem;
         letter-spacing: .2rem;
-        text-transform: uppercase;
         color: $main_text_color;
     }
 
-    &__content {
-        animation: unset;
-        font-weight: 400;
-        font-size: 1.6rem;
-        line-height: 140%;
-        /* or 22px */
-        letter-spacing: .2rem;
-        color: $main_text_color;
-        text-align: left;
 
-        &_center {
-            text-align: center;
-        }
-
-
-    }
 }
 
 .subtitle {
@@ -74,8 +58,22 @@ body {
         line-height: 48px;
         letter-spacing: 5px;
         color: #FFFFFF;
-
+        animation: subheaderAnimation 2s 1 ease-in-out;
     }
 
-    animation: subheaderAnimation 2s 1 ease-in-out;
+
+}
+
+.paragraph {
+    &__content {
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 140%;
+        letter-spacing: .2rem;
+        color: $main_text_color;
+
+        &_center {
+            text-align: center;
+        }
+    }
 }

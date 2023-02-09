@@ -7,9 +7,9 @@
 }
 
 .margin-bottom-30 {
-    &:not(last-child) {
-        margin-bottom: 3rem;
-    }
+
+    margin-bottom: 3rem;
+
 
 }
 
@@ -23,4 +23,8 @@
 
 .max-width-190 {
     max-width: 20rem;
+}
+
+.margin-0-a {
+    margin: 0 auto;
 }
