@@ -13,6 +13,7 @@
         left: 0;
         backface-visibility: hidden;
         border-radius: .5rem;
+        backface-visibility: hidden;
         box-shadow: $card-shadow;
 
         &_front {
@@ -27,10 +28,13 @@
 
     &:hover &__side_front {
         transform: rotateY(180deg);
+        backface-visibility: hidden;
     }
 
     &:hover &__side_back {
         transform: rotateY(0deg);
+        backface-visibility: hidden;
+
     }
 
     &__img {
