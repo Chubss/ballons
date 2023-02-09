@@ -3,6 +3,8 @@
     perspective: 150rem;
     height: 50rem;
     position: relative;
+    margin-bottom: 8rem;
+
 
     &__side {
         height: 50rem;
@@ -15,6 +17,8 @@
         border-radius: .5rem;
         backface-visibility: hidden;
         box-shadow: $card-shadow;
+        border-radius: .5rem;
+
 
         &_front {
             // background-color: yellow;
@@ -42,30 +46,101 @@
         background: $gradient-brown-light;
         background-clip: border-box;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        border-radius: .5rem;
+
+
 
         img {
             width: 100%;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+            overflow: hidden;
+            border-radius: .5rem;
+
+
         }
     }
 
     &__title {
         top: 18.6rem;
         right: 0;
+        .span_1{
+        padding: 1rem 2rem .1rem;
+        }
+        .span2{
+            padding: .1rem 2rem 1rem;
+            top: 0;
+        }
     }
 
     &__links {
         background-color: #FFFFFF;
         list-style-type: none;
+        text-decoration: none;
         padding: 2.5rem 4.8rem 5.5rem;
     }
 
     &__link {
+        display: inline-block;
         &:not(:last-child) {
             margin-bottom: 2rem;
         }
+        border-bottom: .1rem solid $main_text_color;
+
 
         cursor: pointer;
 
     }
+    .card-tour {
+		// .card-tour__side
+        
+		&__side {
+			// .card-tour__side_back
+			&_back {}
+		}
+		// .card-tour__backSide
+		&__backSide {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+}
+        .backSide {
+            text-align: center;
+            margin-bottom: 8rem;
+
+                // .backSide__price
+                &__price {
+                    margin-bottom: 8rem;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: 2px;
+                    color: #FFFFFF;
+                }
+                // .backSide__value
+                &__value {
+                    margin-bottom: 8rem;
+                    font-weight: 500;
+                    font-size: 60px;
+                    line-height: 72px;
+                    letter-spacing: 2px;
+                    color: #FFFFFF;
+
+                }
+                // .backSide__btn
+                &__btn {
+                    display: inline-block;
+                    color: #777777;
+                    width: unset;
+
+                }
+        }
+        &__btn {
+            display: inline-block;
+            color: #777777;
+            width: unset;
+
+        }
+    
 }
