@@ -9,12 +9,14 @@
         padding: 21.5rem 0;
     }
 
-    &__cards {}
+
 
     &__card {
         // max-width: 24rem;
         background-color: #FFFFFF;
         border-radius: .5rem;
+        box-shadow: $box-shadow;
+        transition: all .3s;
 
         &:hover {
             transform: scale(1.1);
@@ -41,10 +43,14 @@
 
     }
 
-    &__header {}
 
-    &__descr {}
 }
+
+
+
+
+
+
 
 // .icon-Globe {
 //     width: 100%;

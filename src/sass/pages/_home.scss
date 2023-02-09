@@ -2,10 +2,16 @@
     &__content {
         margin-top: 8rem;
         min-height: 73rem;
-        background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url("../../img/cards/cards_bg.jpg") center center / cover no-repeat;
+        background: $gradient-cards, url("../../img/cards/cards_bg.jpg") center center / cover no-repeat;
         transform: skewY(5deg);
     }
 
 
 
 }
+
+// .tours {
+//     &__content {
+//         padding-bottom: 5rem;
+//     }
+// }

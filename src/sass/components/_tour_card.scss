@@ -1,0 +1,67 @@
+.card-tour {
+    // transition: transform 1s;
+    perspective: 150rem;
+    height: 50rem;
+    position: relative;
+
+    &__side {
+        height: 50rem;
+        width: 100%;
+        transition: all 1s ease-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        border-radius: .5rem;
+        box-shadow: $card-shadow;
+
+        &_front {
+            // background-color: yellow;
+        }
+
+        &_back {
+            background: $card-gradient;
+            transform: rotateY(180deg);
+        }
+    }
+
+    &:hover &__side_front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side_back {
+        transform: rotateY(0deg);
+    }
+
+    &__img {
+        width: 34rem;
+        background: $gradient-brown-light;
+        background-clip: border-box;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+
+        img {
+            width: 100%;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        }
+    }
+
+    &__title {
+        top: 18.6rem;
+        right: 0;
+    }
+
+    &__links {
+        background-color: #FFFFFF;
+        list-style-type: none;
+        padding: 2.5rem 4.8rem 5.5rem;
+    }
+
+    &__link {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        cursor: pointer;
+
+    }
+}
