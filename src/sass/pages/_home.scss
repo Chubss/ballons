@@ -8,12 +8,11 @@
 
 }
 
-.tours-content {
 
-    &__btn {
-        color: $main_text_color;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+
+.feedback {
+    &__container {
+        position: relative;
+
     }
 }
