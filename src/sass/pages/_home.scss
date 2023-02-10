@@ -6,12 +6,14 @@
         transform: skewY(5deg);
     }
 
-
-
 }
 
-// .tours {
-//     &__content {
-//         padding-bottom: 5rem;
-//     }
-// }
+.tours-content {
+    color: $main_text_color;
+
+    &__btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

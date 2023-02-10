@@ -2,7 +2,10 @@
     position: relative;
 
     &_header {
-        
+        width: 277px;
+        height: 54px;
+        display: block;
+
         animation: btnToUp 2s 1;
     }
 
@@ -12,9 +15,6 @@
         margin: 0 auto;
         text-decoration: none;
         text-transform: uppercase;
-        display: block;
-        width: 277px;
-        height: 54px;
         background-color: #FFFFFF;
         border-radius: 50px;
         font-weight: 600;
