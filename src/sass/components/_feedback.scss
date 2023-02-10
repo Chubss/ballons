@@ -1,0 +1,38 @@
+.feedback {
+
+    &_title {}
+
+    &__container {}
+
+    &__box {}
+}
+
+.title {
+
+    &_white {}
+}
+
+.feedback-box {
+    width: 75%;
+    background-color: rgba(#FFFFFF, .8);
+    margin: 0 auto;
+    transform: skew();
+
+
+    &__img {
+        width: 16rem;
+        height: 16rem;
+        border-radius: 100%;
+        overflow: hidden;
+        float: left;
+
+        img {
+            width: 100%;
+
+        }
+    }
+
+    &__title {}
+
+    &__paragraph {}
+}
