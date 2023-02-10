@@ -1,22 +1,28 @@
-.feedback {
-
-    &_title {}
-
-    &__container {}
-
-    &__box {}
-}
-
 .title {
 
-    &_white {}
+    &_white {
+        animation: unset;
+        text-shadow: $h2-shadow;
+    }
 }
 
 .feedback-box {
-    width: 75%;
+    width: 80%;
     background-color: rgba(#FFFFFF, .8);
     margin: 0 auto;
-    transform: skew();
+    height: 26.7rem;
+    padding: 5.5rem 17rem 6.4rem 18rem;
+    transform: skew(330deg);
+    box-shadow: $box-shadow;
+
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+
+    &__card {
+        transform: skew(-330deg);
+
+    }
 
 
     &__img {
@@ -25,14 +31,53 @@
         border-radius: 100%;
         overflow: hidden;
         float: left;
+        margin-right: 4rem;
+        shape-outside: circle(50% at 50% 50%);
+        position: relative;
+        transition: all .4s;
+
+        &:hover img {
+            transform: scale(1);
+            filter: blur(.2rem) brightness(60%);
+        }
+
+
 
         img {
             width: 100%;
-
+            transition: all .4s;
+            transform: scale(1.2);
         }
     }
 
-    &__title {}
+    &__name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        font-size: 2.4rem;
+        font-weight: 400;
+        line-height: 2.8rem;
+        letter-spacing: .2rem;
+        color: #FFFFFF;
+        text-align: center;
+        opacity: 0;
+        transition: all .4s;
+    }
 
-    &__paragraph {}
+    &:hover &__name {
+        transform: translate(-50%, -20%);
+        opacity: 1;
+    }
+
+
+
+
+    &__text {
+        @include clearfix;
+
+    }
+
+
+
 }
