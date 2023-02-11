@@ -1,0 +1,9 @@
+.book-box {
+    height: 50rem;
+    padding: 5rem 0 0 5rem;
+    background: linear-gradient(115deg, rgba(255, 255, 255, 0.6) 0%, rgba(251, 251, 251, 0.5970763305322129) 55%, rgba(186, 133, 84, 1) 55%, rgba(194, 106, 26, 0.804359243697479) 80%), url("../../img/book/book_bg.jpg") center center / cover no-repeat;
+
+    &__title {
+        width: 55%;
+    }
+}
