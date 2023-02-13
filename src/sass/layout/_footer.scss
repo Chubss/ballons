@@ -1,0 +1,55 @@
+.footer {
+
+    &__container {
+        padding: 8rem 0;
+        background-color: #333333;
+    }
+
+    &__logo {
+        img {
+            width: 12rem;
+        }
+    }
+
+    &__list {
+        list-style-type: none;
+        text-align: center;
+
+
+
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(last-child) {
+            margin-right: 5rem;
+        }
+
+
+    }
+
+    &__link {
+
+
+        &:link,
+        &:visited {
+            color: #FFFFFF;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-size: 1.6rem;
+            letter-spacing: .2rem;
+            display: inline-block;
+            transition: all .3s;
+
+        }
+
+        &:hover {
+            color: $brown-color-dark;
+            text-shadow: $h2-shadow;
+            transform: rotate(5deg) scale(1.2);
+        }
+
+    }
+}

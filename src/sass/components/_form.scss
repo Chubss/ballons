@@ -12,6 +12,12 @@
             margin-bottom: 5rem;
         }
 
+        &:nth-child(4) {
+            margin-bottom: 3rem;
+        }
+
+        position: relative;
+
         .form {
             &__input {
                 width: 40%;
@@ -23,7 +29,9 @@
                 border: none;
                 border-radius: .5rem;
                 overflow: hidden;
-                border-bottom: .3rem solid transparent;
+                border-bottom: .3rem solid #D76363;
+
+
 
                 &:focus {
                     outline: none;
@@ -42,11 +50,7 @@
                 visibility: hidden;
                 transform: translateY(-3rem);
 
-
             }
-
-
-
 
             &__label {
                 font-weight: 400;
@@ -57,14 +61,68 @@
                 margin-top: 1rem;
                 margin-left: 2rem;
                 transition: all .7s;
+                position: absolute;
 
             }
 
+            &__group-radio {
+                display: inline-block;
+                width: 25%;
+            }
+
+
+            &__input-radio {
+                display: none;
+            }
+
+            &__label-radio {
+                position: relative;
+                font-weight: 400;
+                letter-spacing: .2rem;
+                cursor: pointer;
+                padding-left: 4rem;
+
+            }
+
+            &-button-radio {
+                position: absolute;
+                height: 3rem;
+                width: 3rem;
+                border-radius: 50%;
+                border: .4rem solid $brown-color-dark;
+                display: block;
+                top: -.4rem;
+                left: 0;
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    display: block;
+                    background: $brown-color-dark;
+                    border-radius: 50%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                }
+
+            }
+
+            &__input-radio:checked~.form__label-radio .form-button-radio::after {
+                opacity: 1;
+            }
+
+            // &__input-radio:checked~ {
+            //     .form__label-radio {
+            //         .form-button-radio::after {
+            //             opacity: 1;
+            //         }
+            //     }
+            // }
 
         }
-
-
-
 
     }
 }

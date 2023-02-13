@@ -10,6 +10,7 @@
     }
 
 
+    &,
     &:link,
     &:visited {
         margin: 0 auto;
@@ -24,6 +25,7 @@
         padding: 15px 40px;
         transition: all .3s;
         color: $main_text_color;
+        border: none;
 
 
     }
@@ -56,6 +58,16 @@
         z-index: -1;
         transition: all .4s;
 
+
+    }
+
+    &_brown {
+        background-color: $brown-color-dark;
+        color: #fff;
+
+        &::after {
+            background-color: $brown-color-dark;
+        }
 
     }
 }

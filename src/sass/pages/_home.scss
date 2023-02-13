@@ -8,8 +8,6 @@
 
 }
 
-
-
 .feedback {
     &__container {
         position: relative;
@@ -21,5 +19,9 @@
     &__container {
         padding: 10rem;
         background: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%);
+    }
+
+    &-box {
+        min-height: 50rem;
     }
 }
