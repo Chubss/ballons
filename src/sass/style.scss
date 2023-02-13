@@ -5,18 +5,23 @@
 @import "base/animation";
 @import "base/utilites";
 
+@import "pages/home";
+
 
 @import "base/base";
 @import "base/typography";
-@import "layout/header";
-@import "layout/grid";
+
+
 @import "components/buttons";
-@import "layout/about";
 @import "components/content-gallary";
 @import "components/cards";
-@import "pages/home";
 @import "components/tour_card";
 @import "components/feedback";
 @import "components/bg-video";
 @import "components/form";
-@import "layout/footer"
+
+@import "layout/about";
+@import "layout/header";
+@import "layout/grid";
+@import "layout/footer";
+@import "layout/navigation";
